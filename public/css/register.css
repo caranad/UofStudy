@@ -1,0 +1,33 @@
+body
+{
+	background-image: url('http://mythoughtspot.ca/media/uploads/3404_1_1428605680.jpg');
+}
+
+.uos_register_content
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.uos_register_modal
+{
+	background-color: white;
+	width: 75%;
+}
+
+.uos_register_modal input, .uos_register_modal select
+{
+	display: block;
+	width: 100%;
+	font-size: 25px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.uos_register_text
+{
+	font-size: 30px;
+	font-weight: bold;
+}

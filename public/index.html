@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>UofStudy</title>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/home.css">
+
+	<!-- W3 CSS Sheets -->
+	<link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+	<!-- Content of webpage -->
+	<div class = "uos_content">
+
+		<!-- Navbar -->
+		<nav>
+			<ul class="w3-navbar w3-white">
+			  <li><a href="/">UofT Study</a></li>
+			  <li><a href = "#" id = "uos_open_login_modal">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- Header -->
+		<div class = "uos_fullwidth_header">
+			<div class="w3-container w3-large">
+			  <div class="w3-left-align uos_welcome_text">
+			  	<h1>Join thousands of other students in their search for a study group.</h1>
+			  	<button class="w3-button w3-green uos_signup">Sign Up</button>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Why Us section -->
+		<div class = "uos_why_us_header">
+			<h1>Why Choose UofStudy?</h1>
+		</div>
+		<div class = "uos_why_us">
+			<section class = "uos_blurb uos_third">
+				<img alt = "info" class = "uos_blurb_img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1024px-Utoronto_coa.svg.png">
+				<h2>We're dependable</h2>
+				<p>
+					We are your one-stop place for university students to get together, study together and ace their courses thanks to the power of collaboration. More ways to score points, and more ways to make new friends.
+				</p>
+			</section>
+
+			<section class = "uos_blurb uos_third">
+				<img alt = "info" class = "uos_blurb_img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1024px-Utoronto_coa.svg.png">
+				<h2>We're reliable</h2>
+				<p>
+					We pride ourselves on being a community of well-put, dedicated students who are committed to their own educational success and always being on the verge of new students.
+				</p>
+			</section>
+
+			<section class = "uos_blurb uos_third">
+				<img alt = "info" class = "uos_blurb_img" src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1024px-Utoronto_coa.svg.png">
+				<h2>We're fast</h2>
+				<p>
+					Need a hand on that one problem you couldn't solve or get help for in the last few weeks? Well look no further; at UofStudy, we have everything you need for somebody that's out to have your back in this issue. Soon, those troubles will be gone, and out of mind.
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<!-- Login Modal Display -->
+	<div id="uos_login_modal" class="w3-modal">
+	    <div class="w3-modal-content w3-card-8 w3-animate-zoom">
+
+	      <div class="w3-center">
+			  <h1>Login</h1>
+	          <span id = "uos_close_login_modal" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+		  </div>
+
+		  <div class = "uos_errors"></div>
+
+	      <form class="w3-container" action="/" method = "post">
+	        <div class="w3-section">
+	          <label for = "usrname">Username</label>
+	          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="username" required>
+	          <label for = "usrname">Password</label>
+	          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="password" required>
+	          <button class="uos_login w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+	        </div>
+	      </form>
+	    </div>
+  	</div>
+
+	<footer class = "uos_footer">
+		<p>Created and designed by Christopher Aranadi. (c) 2017</p>
+	</footer>
+
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/index.js"></script>
+</body>
+</html>

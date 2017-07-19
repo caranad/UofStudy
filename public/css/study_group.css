@@ -1,0 +1,172 @@
+.uos_study_group
+{
+	position: relative;
+	z-index: 0;
+}
+
+.uos_study_group .uos_group_info
+{
+	padding-top: 15px;
+	height: 520px;
+	border-bottom: 1px solid black;
+}
+
+.uos_study_group .uos_group_posts
+{
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+.uos_study_group .uos_group_posts_area
+{
+	height: 437px;
+	overflow-y: auto;
+}
+
+.uos_study_group .uos_group_title
+{
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.uos_study_group .uos_group_in
+{
+	display: block;
+	text-align: center;
+}
+
+.uos_study_group .uos_group_in img
+{
+	width: 200px;
+	height: 200px;
+}
+
+.uos_study_group .uos_group_in ul li
+{
+	list-style-type: none;
+	margin-bottom: 7px;
+}
+
+.uos_study_group .uos_group_in ul
+{
+	padding: 0;
+}
+
+.uos_study_group .uos_post_input_area
+{
+	display: flex;
+	align-items: center;
+}
+
+.uos_study_group .uos_post_input_area input
+{
+	height: 30px;
+	font-size: 30px;
+	width: 85%;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.uos_study_group .uos_post_input_area .uos_post
+{
+	background-color: green;
+	color: white;
+}
+
+.uos_study_group .uos_the_post
+{
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.uos_study_group .uos_add_group_member
+{
+	display: none;
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	margin-top: 250px;
+}
+
+.uos_study_group .uos_add_form
+{
+	padding: 10px;
+}
+
+.uos_group_members_modal
+{
+	width: 500px;
+	height: 300px;
+	overflow-y: auto;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	display: none;
+	margin-top: 250px;
+}
+
+.uos_group_members_list
+{
+	text-align: left;
+	margin-left: 20px;
+}
+
+.uos_group_members_list .uos_group_member
+{
+	margin-bottom: 20px;
+}
+
+.uos_group_members_list .uos_group_member img
+{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 1px solid black;
+}
+
+.uos_close
+{
+	background-color: red;
+	color: white;
+}
+
+.uos_comment_space
+{
+	height: 60px;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 601px)
+{
+	.uos_study_group
+	{
+		height: 130%;
+	}
+}
+
+@media only screen and (min-width: 600px)
+{
+	.uos_study_group
+	{
+		height: 85%;
+	}
+}
+
+@media only screen and (max-width: 865px)
+{
+	.uos_group_info
+	{
+		width: 100%;
+	}
+
+	.uos_group_posts
+	{
+		width: 100%;
+	}
+}

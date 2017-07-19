@@ -1,0 +1,77 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato';
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.uos_label
+{
+	font-weight: bold;
+}
+
+.uos_navbar
+{
+	text-align: center;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+.uos_navbar .uos_logo_loc
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.uos_navbar ul li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.uos_navbar ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.uos_btn
+{
+	border-radius: 5px;
+	color: white;
+	border: 0;
+	padding: 10px;
+}
+
+.uos_bold
+{
+	font-weight: bold;
+}
+
+.uos_third
+{
+	flex: 1;
+}
+
+.uos_footer
+{
+	background-color: white;
+	border-top: 1px solid black;
+	text-align: center;
+}
+
+input[type='text'], input[type='password'], select, input[type='range'], input[type='number'], input[type='email'], textarea
+{
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid black !important;
+}
+
+.uos_errors
+{
+	color: red;
+	font-weight: bold;
+}

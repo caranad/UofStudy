@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Register</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- W3 CSS Sheets -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/register.css">
+</head>
+<body>
+	<!-- Register a user content -->
+	<div class = "uos_register_content">
+		<div class="w3-card-4 w3-padding w3-display-middle uos_register_modal">
+			<div class="w3-container w3-red">
+			  <h2>Register For UofT Study</h2>
+			</div>
+
+			<div class = "uos_errors"></div>
+
+			<form class="w3-container uos_register_self" method = "post" action = "/users">
+				<div class = "uos_label">Name</div>
+				<input type = "text" name = "name" required>
+
+				<div class = "uos_label">Email</div>
+				<input type = "email" name = "email" required>
+
+				<div class = "uos_label">Username</div>
+				<input type = "text" name = "username" required>
+
+				<div class = "uos_label">Password</div>
+				<input type = "password" name = "password" required>
+
+				<div class = "uos_label">City</div>
+				<input type = "text" id = "city" name = "city" required>
+
+				<div class = "uos_label">Program</div>
+				<select class = "uos_register_study" name = "program" required>
+					<option value = "" selected>Choose...</option>
+					<option value = "Engineering">Engineering</option>
+					<option value = "Computer Science">Computer Science</option>
+					<option value = "Life Sciences">Life Sciences</option>
+					<option value = "English">English</option>
+				</select>
+
+				<div class = "uos_label">Year of Study</div>
+				<input type = "number" name = "year_of_study" min = "1" max = "4" required>
+
+				<button class="w3-btn w3-red uos_register_btn" type = "submit">Log In</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/register.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UMVkPiNg5Ef3ev2c5ps75NrOS6N4tEw&libraries=places&callback=loadPlaces"></script>
+</body>
+</html>

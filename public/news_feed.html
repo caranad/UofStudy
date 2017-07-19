@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>News Feed</title>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- W3 CSS Sheets -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  	<link rel="stylesheet" href="css/w3.css">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/news_feed.css">
+	<link rel = "stylesheet" href = "css/study_group.css">
+</head>
+<body>
+	<div class = "uos_content">
+		<!-- News Feed Navbar -->
+		<nav class = "uos_news_feed_header">
+			<div class = "uos_open_menu">
+			</div>
+
+			<ul class="w3-navbar w3-white uos_menu">
+				<li class = "highlighted"><a href = "#" id = "profile_bar">Welcome, <span id = "username"></span></a></li>
+			  	<li><a href = "#" id = "map">MAP</a></li>
+				<li><a href = "#" id = "news">NEWS FEED</a></li>
+				<li><a href = "#" id = "advanced_search">ADVANCED SEARCH</a></li>
+				<li><a href = "#" id = "recommended_groups">RECOMMENDED GROUPS</a></li>
+			  	<li><a href="/logout">LOGOUT</a></li>
+			</ul>
+		</nav>
+
+		<!-- Basic search: search keywords only -->
+		<div class = "uos_search_header">
+			<input type = "text" name = "search" class = "uos_search_bar">
+			<button class = "w3-btn w3-blue uos_search_btn">Search</button>
+		</div>
+
+		<!-- Section for map -->
+		<section class = "uos_map">
+			<h2>Map</h2>
+			<div id = "uos_google_map">
+
+			</div>
+		</section>
+
+		<!-- Section for news items -->
+		<section class = "uos_news">
+			<h2>News</h2>
+		</section>
+
+		<div class = "uos_basic_search">
+
+		</div>
+
+		<!-- Section for advanced search -->
+		<div class = "uos_advanced_search">
+			<div class = "uos_advanced_filters">
+				<h1>Filters</h1>
+				<form>
+					<p>Course Code</p>
+					<input type = "text" class = "uos_adv_search_input" name = "courses" placeholder = "Enter course code">
+
+					<p>Tags</p>
+					<input type = "text" class = "uos_adv_search_input" name = "tag" placeholder = "Enter relevant tags, separated by commas">
+
+<!--
+					<p>Group size</p>
+					<input type = "range" name = "group_size" min = "0" max = "10">
+					<div class = "uos_group_size_text">5</div> -->
+
+					<p>Location</p>
+					<input type = "text" class = "uos_adv_search_input" name = "location" placeholder = "Enter location here">
+
+					<p>Meeting Times</p>
+					<select name = "day" class = "uos_adv_search_input">
+						<option value = "">Choose...</option>
+						<option value = "Mon">Monday</option>
+						<option value = "Tues">Tuesday</option>
+						<option value = "Wed">Wednesday</option>
+						<option value = "Thurs">Thursday</option>
+						<option value = "Fri">Friday</option>
+						<option value = "Sat">Saturday</option>
+						<option value = "Sun">Sunday</option>
+					</select>
+
+					<p>Start Time</p>
+					<div class = "uos_start_time">
+						<input type = "number" min = "1" max = "12" name = "start_time" class = "uos_adv_search_input">
+						<select name = "start_am_pm" class = "uos_adv_search_input">
+							<option value = "am">AM</option>
+							<option value = "pm">PM</option>
+						</select>
+					</div>
+
+					<p>End Time</p>
+					<div class = "uos_end_time">
+						<input type = "number" min = "1" max = "12" name = "end_time" class = "uos_adv_search_input">
+						<select name = "end_am_pm" class = "uos_adv_search_input">
+							<option value = "am">AM</option>
+							<option value = "pm">PM</option>
+						</select>
+					</div>
+
+					<div class = "uos_other_dates">
+					</div>
+
+					<button type = "submit" class = "w3-btn w3-red uos_search">Search</button>
+				</form>
+
+			</div>
+			<div class = "uos_advanced_results">
+
+			</div>
+		</div>
+
+		<!-- Section for recommended groups -->
+		<section class = "uos_recommended_groups">
+			<h2>Recommended Groups</h2>
+
+			<div class = "uos_groups_to_recommend">
+
+			</div>
+		</section>
+
+		<!-- Profile -->
+		<div class = "uos_profile_bar">
+			<div class = "uos_profile_header">
+				<div class = "uos_profile_image">
+					<img alt = "profile" src = "images/placeholder.png">
+				</div>
+				<div class = "uos_profile_info">
+
+				</div>
+			</div>
+			<div class = "uos_profile_data">
+				<div class = "uos_my_study_groups">
+
+				</div>
+				<div class = "uos_my_options">
+					<h1>Options</h1>
+					<ul>
+						<li><a href = "/registerGroup">Create a new study group</a></li>
+						<li><a href = "/edit">Edit profile information</a></li>
+						<li><a href = "#" class = "uos_terminate">Terminate my account</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class = "uos_footer">
+		<p>Created and designed by Christopher Aranadi. (c) 2017</p>
+	</footer>
+
+	<!-- JavaScripts and Google Maps -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/common_func.js"></script>
+	<script src = "js/news_feed.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UMVkPiNg5Ef3ev2c5ps75NrOS6N4tEw&callback=start&libraries=places"></script>
+</body>
+</html>

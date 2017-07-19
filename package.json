@@ -1,0 +1,26 @@
+{
+  "name": "uofstudy",
+  "version": "3.0.0",
+  "description": "web application for finding study groups at uoft",
+  "main": "server.js",
+  "scripts": {
+    "start": "source ./.env && node server.js",
+    "pg-server": "source ./.env;postgres -D /usr/local/var/postgres &;sleep 2;dropdb uofstudy;createdb -U postgres -W",
+    "test": ""
+  },
+  "author": "Team-34",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.0.6",
+    "lodash": "^4.17.4",
+    "multer": "^1.3.0",
+    "pg": "^6.1.3",
+    "pg-promise": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSC309-spring2017/Team34-UofStudy.git"
+  }
+}

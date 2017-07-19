@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Register Study Group</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- W3 CSS style sheets -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/register_group.css">
+
+	<!-- SPECS:
+		Register Study Group (5)
+		● 	Form validation will be instituted on each text box
+		● 	Users must indicate the following required fields: group name, description,
+			course website link, a list of group members, location, meeting hours / days, and
+		tags that they want their group to be associated with (when searched)
+		● The user who created the study group will automatically be assigned to the
+		‘Admin’ role for the study group
+		● When registering a study group, relevant keywords are important so as to
+		categorize the study groups and make it easier for other users to find your group
+		● Anyone can create a study group as long as if they have an account
+ 	-->
+</head>
+
+<body>
+	<!-- Modal for registering study groups -->
+	<div class="w3-card-4 w3-padding w3-display-middle uos_register_group_modal">
+		<div class="w3-container w3-blue">
+		  <h2>Register UofT Study Group</h2>
+		</div>
+
+		<div class = "uos_errors"></div>
+
+		<form class="uos_register_group w3-container w3-center" action = "/studygroups" method = "post">
+			<!--  Required Inputs -->
+			<label for = "groupname">Group name</label>
+			<input class="w3-input" type="text" name = "groupname" placeholder="Enter a name for this group" required>
+
+			<label for = "description">Description</label>
+			<textarea class="w3-input" name = "description" placeholder="Whats the purpose of this group?"></textarea>
+
+			<label for = "location">Meeting location</label>
+			<input class="w3-input" type = "text" name = "room" placeholder = "BA 1200" required>
+			<input class="w3-input" id = "location" type="text" name = "location" placeholder="Bahen Centre" required>
+
+			<label for = "day">Meeting day</label>
+			<select class = "w3-input" name = "day" required>
+				<option value = "Mon">Monday</option>
+				<option value = "Tues">Tuesday</option>
+				<option value = "Wed">Wednesday</option>
+				<option value = "Thurs">Thursday</option>
+				<option value = "Fri">Friday</option>
+				<option value = "Sat">Saturday</option>
+				<option value = "Sun">Sunday</option>
+			</select>
+
+			<label for = "start_time">Meeting time</label>
+			<input class = "w3-input" type = "number" min = "1" max = "12" name = "time">
+			<select name = "am_pm" class = "w3-input">
+				<option value = "am">AM</option>
+				<option value = "pm">PM</option>
+			</select>
+
+			<label for = "tags">Tags</label>
+			<input class="w3-input" type="text" name = "tags" placeholder="csc309, Web Development" required>
+
+			<br>
+			<button class="w3-btn w3-blue w3-round-large">Register</button>
+		</form>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/register_group.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UMVkPiNg5Ef3ev2c5ps75NrOS6N4tEw&libraries=places&callback=loadPlaces"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.uos_why_us_header
+{
+	text-align: center;
+}
+
+.uos_fullwidth_header
+{
+	height: 350px;
+	color: white;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	background-size: 100% 125%;
+	background-repeat: no-repeat;
+	background-image: url(https://www.utoronto.ca/sites/default/files/stgeorge-campus-cover.jpg);
+}
+
+.uos_welcome_text
+{
+	top: 50%;
+	position: absolute;
+	margin-top: -200px;
+}
+
+.uos_why_us
+{
+	width: 100%;
+	display: flex;
+}
+
+.uos_why_us .uos_blurb
+{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.uos_why_us .uos_blurb .uos_blurb_img
+{
+	width: 150px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+img[alt='Avatar']
+{
+	width: 30%;
+}
+
+@media only screen and (max-width: 545px)
+{
+	.uos_why_us
+	{
+		display: block;
+	}
+
+	.uos_why_us .uos_blurb
+	{
+		width: 100%;
+		padding: 0;
+	}
+}

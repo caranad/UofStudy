@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Edit Profile</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Stylesheets  -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/update_group.css">
+
+	<!-- W3 CSS style sheets -->
+	<link rel="stylesheet" href="css/w3.css">
+
+	<!-- SPECS:
+		* Edit your profile Info
+ 	-->
+</head>
+
+<body>
+	<!-- Start of Body -->
+	<div class="w3-card-4 w3-padding w3-display-middle uos_update_group">
+		<div class="w3-container w3-green">
+		  <h2>Update Profile Info</h2>
+		</div>
+
+		<form class="w3-container w3-center uos_update_form">
+			<label for = "groupname">Update group name</label>
+			<input class="w3-input uos_edit_input" type="text" name = "groupname">
+
+			<label for = "description">Update description</label>
+			<textarea class="w3-input uos_edit_input" name = "description"></textarea>
+
+			<label for = "location">Update meeting location</label>
+			<input class="w3-input uos_edit_input" type = "text" name = "room">
+			<input class="w3-input uos_edit_input" id = "location" type="text" name = "location">
+
+			<label for = "day">Update meeting day</label>
+			<select class = "w3-input uos_edit_input" name = "day">
+				<option value = "Mon">Monday</option>
+				<option value = "Tues">Tuesday</option>
+				<option value = "Wed">Wednesday</option>
+				<option value = "Thurs">Thursday</option>
+				<option value = "Fri">Friday</option>
+				<option value = "Sat">Saturday</option>
+				<option value = "Sun">Sunday</option>
+			</select>
+
+			<label for = "start_time">Update meeting time</label>
+			<input class = "w3-input uos_edit_input" type = "number" min = "1" max = "12" name = "time">
+			<select name = "am_pm" class = "w3-input uos_edit_input">
+				<option value = "am">AM</option>
+				<option value = "pm">PM</option>
+			</select>
+
+			<br>
+			<button class="w3-btn w3-blue w3-round-large">Update</button>
+		</form>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/common_func.js"></script>
+	<script src = "js/edit_group.js"></script>
+	<script src = "js/register_group.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7UMVkPiNg5Ef3ev2c5ps75NrOS6N4tEw&libraries=places&callback=loadPlaces"></script>
+</body>
+</html>

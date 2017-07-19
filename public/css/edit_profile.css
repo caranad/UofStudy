@@ -1,0 +1,18 @@
+.uos_profile_img
+{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.uos_profile_img_container
+{
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px;
+}
+
+.uos_edit_profile
+{
+	width: 70%;
+}

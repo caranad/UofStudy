@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title></title>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- W3 CSS Sheets -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  	<link rel="stylesheet" href="css/w3.css">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/news_feed.css">
+	<link rel = "stylesheet" href = "css/study_group.css">
+</head>
+<body>
+	<div class = "uos_content">
+		<!-- News Feed Navbar -->
+		<nav class = "uos_news_feed_header">
+			<div class = "uos_open_menu">
+			</div>
+
+			<ul class="w3-navbar w3-white uos_menu">
+				<li class = "highlighted"><a href = "#" id = "profile_bar">Welcome, <span id = "username"></span></a></li>
+                <li><a href = "/news">NEWS FEED</a></li>
+			  	<li><a href = "/logout">LOGOUT</a></li>
+			</ul>
+		</nav>
+
+		<!-- Study Group -->
+		<div class = "uos_study_group">
+			<!-- Group information -->
+			<div class = "uos_group_info w3-quarter">
+				<div class = "uos_group_in">
+					<img alt = "group" src = "images/placeholder.png">
+					<div class = "uos_group_title"></div>
+					<div class = "uos_group_desc"></div>
+
+					<ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class = "uos_group_posts w3-threequarter">
+				<div class = "uos_post_input_area">
+					<input type = 'text' placeholder = 'You must be part of this group to post' class = 'uos_post_input' disabled>
+					<button class = 'w3-btn uos_post'>Post</button>
+				</div>
+				<div class = "uos_post_input_type">
+					<input type = "radio" name = "pubpr" value = "public" checked>Public Post (Everyone Can See)
+					<input type = "radio" name = "pubpr" value = "private">Private Post (Only Group Members Can See)
+				</div>
+
+				<section class = "uos_group_posts_area">
+					<h2>Posts</h2>
+				</section>
+			</div>
+
+			<!-- Modal for displaying group members -->
+			<div class="w3-card-4 w3-padding w3-display-middle uos_group_members_modal uos_modal">
+				<div class="w3-container w3-blue">
+		 			<h2>Group Members</h2>
+				</div>
+
+				<div class = "uos_group_members_list">
+
+				</div>
+
+				<button class = "w3-btn w3-red uos_close">Close</button>
+			</div>
+
+			<!-- Modal for adding group members -->
+			<div class="w3-card-4 w3-padding w3-display-middle uos_add_group_member uos_modal">
+				<div class="w3-container w3-orange">
+		 			<h2>Add group member</h2>
+				</div>
+
+				<div class = "uos_add_form">
+					<p>Type in the username</p>
+					<input type = "text" name = "username" class = "w3-input" required>
+					<button type = "submit" class = "w3-btn w3-green uos_send_request">Send Request</button>
+				</div>
+
+				<button class = "w3-btn w3-red uos_close">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<footer class = "uos_footer">
+		<p>Created and designed by Christopher Aranadi. (c) 2017</p>
+	</footer>
+
+	<!-- JavaScripts and Google Maps -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/common_func.js"></script>
+	<script src = "js/study_group.js"></script>
+</body>
+</html>

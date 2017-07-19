@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Edit Profile</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Stylesheets  -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/edit_profile.css">
+
+	<!-- W3 CSS style sheets -->
+	<link rel="stylesheet" href="css/w3.css">
+
+	<!-- SPECS:
+		* Edit your profile Info
+ 	-->
+</head>
+
+<body>
+	<!-- Start of Body -->
+	<div class="w3-card-4 w3-padding w3-display-middle uos_edit_profile">
+		<div class="w3-container w3-blue">
+		  <h2>Edit Profile Info</h2>
+		</div>
+
+		<!-- Account Image -->
+		<div class = "uos_profile_img_container">
+			<img class="w3-circle uos_profile_img" src="http://tedxstockholm.com/wp-new/wp-content/uploads/2015/05/blank_avatar.jpg" alt="Profile Pic">
+		</div>
+
+		<form class="w3-container w3-center uos_edit_form">
+			<!--  Required Inputs -->
+			<label for = "name">Name</label>
+			<input class="w3-input uos_edit_input" type="text" name = "name">
+
+			<!-- Program Info -->
+			<div class="w3-row-padding">
+				<div class="w3-half">
+					<label>Program</label>
+					<select class="w3-select uos_edit_input" name="program">
+						<option value="" disabled selected>Choose a program</option>
+						<option value = "Engineering">Engineering</option>
+						<option value = "Computer Science">Computer Science</option>
+						<option value = "Life Sciences">Life Sciences</option>
+						<option value = "English">English</option>
+					</select>
+				</div>
+
+				<div class="w3-half">
+					<label>Year of study</label>
+					<input class = "w3-input uos_edit_input" type = "number" min = "1" max = "4" name = "year_of_study">
+				</div>
+			</div>
+
+			<br>
+			<label>Email</label>
+			<input class="w3-input uos_edit_input" type="email" name = "email">
+
+			<!-- Submit Button -->
+			<br>
+			<button class="w3-btn w3-blue w3-round-large uos_update_profile">Update</button>
+		</form>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "js/common_func.js"></script>
+	<script src = "js/edit_profile.js"></script>
+</body>
+</html>

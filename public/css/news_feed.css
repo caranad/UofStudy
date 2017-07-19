@@ -1,0 +1,286 @@
+input[name='search']
+{
+	width: 500px;
+	height: 25px;
+	font-size: 25px;
+}
+
+.highlighted
+{
+	background-color: green;
+	color: white;
+}
+
+.normal
+{
+	background-color: white;
+	color: black;
+}
+
+.uos_news_feed_header
+{
+	border-bottom: 1px solid black;
+}
+
+.uos_news_feed_header .uos_open_menu
+{
+	background-image: url(../images/hamburger.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	margin-left: 0 auto;
+}
+
+.uos_search_header
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.uos_search_header .uos_search_bar, .uos_group_posts .uos_post_input
+{
+	margin-right: 10px;
+	flex: 3;
+	height: 35px;
+}
+
+.uos_map
+{
+	display: block;
+}
+
+.uos_news, .uos_advanced_search, .uos_profile_bar
+{
+	display: none;
+}
+
+.uos_advanced_search .uos_advanced_filters
+{
+	flex: 1;
+	padding: 8px;
+}
+
+ .uos_advanced_search .uos_advanced_results
+ {
+ 	flex: 1;
+ 	padding: 8px;
+ }
+
+.uos_profile_bar .uos_profile_header
+{
+	display: flex;
+	flex: 1;
+	padding: 10px;
+}
+
+.uos_news
+{
+	padding: 8px;
+}
+
+.uos_news .uos_news_post
+{
+	display: block;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.uos_my_study_groups, .uos_my_options
+{
+	flex: 1;
+	padding: 10px;
+}
+
+.uos_advanced_filters input, .uos_advanced_filters select
+{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 25px;
+}
+
+.uos_start_time, .uos_end_time
+{
+	display: flex;
+	flex: 1;
+}
+
+#uos_add_date_btn
+{
+	display: block;
+}
+
+.uos_search_header .uos_search_btn, .uos_group_posts .uos_post
+{
+	flex: 1;
+}
+
+.uos_result_title
+{
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.uos_search_result
+{
+	display: flex;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.uos_search
+{
+	background-color: red;
+	color: white;
+}
+
+.uos_my_study_groups
+{
+	height: 300px;
+	overflow-y: auto;
+}
+
+.uos_my_study_groups .uos_sg
+{
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	border-radius: 10px;
+}
+
+.uos_recommended_groups
+{
+	display: none;
+}
+
+.uos_groups_to_recommend
+{
+	height: 500px;
+	overflow-y: auto;
+	text-align: center;
+}
+
+.uos_groups_to_recommend .uos_group_rec
+{
+	margin-bottom: 15px;
+}
+
+.uos_group_rec img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.uos_study_group_img
+{
+	flex: 1;
+}
+
+.uos_study_group_text
+{
+	flex: 3;
+}
+
+.uos_group_size_text
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+.uos_my_options ul li
+{
+	list-style-type: none;
+	padding: 5px;
+}
+
+.uos_my_options ul li a
+{
+	text-decoration: none;
+	color: blue;
+}
+
+.uos_profile_bar .uos_profile_header .uos_profile_image img, .uos_search_result img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.uos_my_study_groups .uos_sg img
+{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+#uos_google_map
+{
+	width: 100%;
+	height: 600px;
+}
+
+@media only screen and (max-width: 640px)
+{
+	.uos_advanced_search, .uos_profile_data
+	{
+		display: block;
+	}
+
+	.uos_open_menu
+	{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 641px)
+{
+	.uos_advanced_search, .uos_profile_data
+	{
+		display: flex;
+	}
+
+
+}
+
+@media only screen and (min-width: 757px)
+{
+	.uos_open_menu
+	{
+		display: none;
+	}
+
+	.uos_menu
+	{
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 756px)
+{
+	.uos_open_menu
+	{
+		display: block;
+	}
+
+	.uos_menu
+	{
+		display: none;
+	}
+
+	.uos_menu li
+	{
+		width: 100%;
+		text-align: center;
+	}
+}
